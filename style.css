@@ -33,7 +33,7 @@ img {
 <!-- toc styling-->
 .toc {
   background: #f4f4f4;
-  padding: 5rem;
+  padding: 1rem;
   margin: 2rem 0;
   border-left 4px solid #4a7c59;
 }
@@ -44,7 +44,7 @@ img {
 
 .toc ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 1rem;
 }
 
 .toc li {
