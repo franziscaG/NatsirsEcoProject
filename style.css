@@ -10,9 +10,9 @@ body {
 body h1 {
   color: #3a5a40;
   margin:0;
-  font-family: "Comic Neue", "Comic Sans";
+  font-family: 'Patrick Hand', sans-serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 body h2 {
