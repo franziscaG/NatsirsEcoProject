@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="navigation.css">
+
+  <!-- comic neue font for headlines-->
+  <link href="http://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
   <!-- font awesome for the whatsapp symbol-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,37 +27,106 @@
   
   <!--navigation-->
   <header>
-    <h2>Contact</h2>
+    <a href="index.html" class="home-link">Natsir's Eco Project</a>
   </header>
 
-  <nav class="toc">
-    <h3 onclick="this.nextElementSibling.classList.toggle('hidden')">Contents</h3>
-    <ul class="hidden">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nature-school.html">Organic Garden</a></li>
-      <li><a href="english-school.html">English School</a></li>
-      <li><a href="eco-tourism.html">Workshops</a></li>
-      <li><a href="homestay.html">Homestay and Retreats</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="projects.html">Current and Future Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!--this is where the menu should appear-->
+  <div id="menu-placeholder"></div>
   
   <main>
 
-    <p>Address. Whatsapp. Instagram. Facebook. Workaway. Worldpeckers and others. Crowdfunding.</p>
+    <div class="headline">
+      <h1>Contact</h1>
+    </div>
     
+    <div class="Contacts">
+
+      <!--location-->
+      <div class="Contact">
+        <h3>Where we are:</h3>
+        <p>
+          <span class="location-icon"></span>
+          Natsir's Eco Project, Rembon, Makale, Toraja, Sulawesi, Indonesia</p>
+      </div>
+
+      <!--Whatsapp button--> 
+      <div class="Contact">
+        <h3>Get in touch:</h3>
+        <a href="https://wa.me/6285256070656"
+          class="whatsapp-button" 
+          target="_blank" 
+          aria-label="WhatsApp">
+          Chat on WhatsApp
+        </a>
+      </div> 
+      
+      <!--Instagram-->
+      <div class="Contact">
+        <h3>Follow us on social media:</h3>
+
+        <div class="social-buttons">
+          <a href="https://www.instagram.com/natsirs_initiatives"
+            class="social-button IG" 
+            target="_blank" 
+            aria-label="Instagram">
+            <svg viewBox="0 0 40 40" aria-hidden="true">
+              <rect x="5" y="5" width="30" height="30" rx="5"/>
+              <circle cx="20" cy="20" r="8"/>
+              <circle cx="29" cy="11" r="1.5"/>
+            </svg>
+          </a>
+
+          <!--Facebook-->
+          <a href="https://www.facebook.com/natsirsenglishnatureschool"
+            class="social-button FB" 
+            target="_blank" 
+            aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12C22 6.48 17.52 2 12 2S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99h-2.54v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"/>
+            </svg>
+          </a>
+
+          <!--Youtube-->
+          <a href="https://www.youtube.com/@natsirecoschoolupdates"
+            class="social-button YT" 
+            target="_blank" 
+            aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.498 6.186a3.012 3.012 0 0 0-2.12-2.132C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.378.554A3.012 3.012 0 0 0 .502 6.186 31.07 31.07 0 0 0 0 12a31.07 31.07 0 0 0 .502 5.814 3.012 3.012 0 0 0 2.12 2.132C4.495 20.5 12 20.5 12 20.5s7.505 0 9.378-.554a3.012 3.012 0 0 0 2.12-2.132A31.07 31.07 0 0 0 24 12a31.07 31.07 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!--Map-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d348778.6464518956!2d119.6466787027197!3d-2.9292302721254897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d93eda23bab2af1%3A0x52274f6771f4531c!2sNatsir%E2%80%99s%20Eco%20Project!5e0!3m2!1sen!2ssg!4v1770430621924!5m2!1sen!2ssg" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>"
+
   </main>
 
   <footer>
-    <p>&copy; 2026 franzisca.gorniaczyk@gmail.com</p>
+    <p>&copy; Website created by Franzisca Gorniaczyk, 2026</p>
   </footer>
 
    <!--floating whatsapp button-->
-  <a href="https://wa.me/6285256070656" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
+  <a href="https://wa.me/6285256070656" 
+    class="whatsapp-float" 
+    target="_blank" 
+    aria-label="Contact on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+  <!-- load the script for the menu-->
+  <script src="script.js"></script>
 
 </body>
 </html>

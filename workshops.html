@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Workshops</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="navigation.css">
+
+  <!-- comic neue font for headlines-->
+  <link href="http://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
   <!-- font awesome for the whatsapp symbol-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,31 +27,41 @@
   
   <!--navigation-->
   <header>
-    <h2>Workshops</h2>
+    <a href="index.html" class="home-link">Natsir's Eco Project</a>
   </header>
 
-  <nav class="toc">
-    <h3 onclick="this.nextElementSibling.classList.toggle('hidden')">Contents</h3>
-    <ul class="hidden">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nature-school.html">Organic Garden</a></li>
-      <li><a href="english-school.html">English School</a></li>
-      <li><a href="eco-tourism.html">Workshops</a></li>
-      <li><a href="homestay.html">Homestay and Retreats</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="projects.html">Current and Future Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!--this is where the menu should appear-->
+  <div id="menu-placeholder"></div>
   
   <main>
 
-    <p>Workshops: Chocolate making. Coffee roasting. Traditional cooking. Identifying and processing of medicinal plants. </p>
+    <div class="headline">
+      <h1>Workshops</h1>
+    </div>
+
+    <div class="page-intro">
+      <nav class="page-toc">
+        <ul>
+          <li><a href="#chocolate">Organic Chocolate workshop</a></li>
+          <li><a href="#coffee">Organic Coffee Workshop</a></li>
+          <li><a href="#cooking">Torajan Cooking Class</a></li>
+        </ul>
+      </nav>
+
+      <div class="page-txt">
+        <p>Our garden is 100% organic and beautifully wild. We love taking care of our trees and plants and our crops are of fantastic quality. It took some time and effort to 
+          figure out the best ways to process our fruit and vegetables, and while we're still aiming to improve, we have found unique ways that fit our lifestyle.
+        </p>
+      </div>
+
+    </div>
 
     <!-- Insert workshop flyers and descriptions-->
-    <div class="products">
-      <div class="product">
-        <img src="images/Chocolate_workshop.png" alt="Chocolate workshop information">
+      <div class="main-div" id="chocolate">
+        <div class="main-img-box">
+        <img src="images/Chocolate_workshop.png" alt="Chocolate workshop information" class="main-img">
+        </div>
+        <div class="main-text">
         <h3>Organic Chocolate Workshop</h3>
         <p>Have you always wanted to find out how to make chocolate from scratch? In our nature garden we grow a large variety
             of organic cacao trees. We will explain to you how to grow the trees, how to harvest the fruit and how to process them. 
@@ -59,16 +74,19 @@
             Arrive from Makale in the morning; we can help you organize transport if you don't have any. Roam the garden and discover the
             beauty of the Torajan Highlands. At lunchtime we provide you with authentic Torajan food, rice, steamed vegetables and fried 
             tempeh or fish. We can easily cater to vegetarians. Ask us for reccommendations abour the area and take off for a short hike
-            or a cultural attraction in the afternoon. Return to your homestay in the evening. You can also book a homestay with us
-            (insert link to homestay section).
+            or a cultural attraction in the afternoon. Return to your homestay in the evening. You can also book a 
+            <a href="homestay.html" class="in-text-link">homestay</a> with us.
         </p>
         <p>
             This workshop is recommended for children as well as adults.
         </p>
+        </div>
       </div>
 
-      <div class="product">
-        <img src="images/coffee_workshop.png" alt="Coffee workshop information">
+      <div class="main-div reverse" id="coffee">
+        <div class="main-img-box">
+        <img src="images/coffee_workshop.png" alt="Coffee workshop information" class="main-img"></div>
+        <div class="main-text">
         <h3>Organic Coffee Workshop</h3>
         <p>Have you always wanted to learn how to process coffee beans? In our nature garden we grow a large variety
             of organic coffee trees. We will explain to you how to grow the trees, how to harvest the beans and how to process them. 
@@ -80,13 +98,16 @@
             Arrive from Makale in the morning; we can help you organize transport if you don't have any. Roam the garden and discover the
             beauty of the Torajan Highlands. At lunchtime we provide you with authentic Torajan food, rice, steamed vegetables and fried 
             tempeh or fish. We can easily cater to vegetarians. Ask us for reccommendations abour the area and take off for a short hike
-            or a cultural attraction in the afternoon. Return to your homestay in the evening. You can also book a homestay with us
-            (insert link to homestay section).
+            or a cultural attraction in the afternoon. Return to your homestay in the evening. You can also book a 
+            <a href="homestay.html" class="in-text-link">homestay</a> with us.
         </p>
+        </div>
       </div>
 
-      <div class="product">
-        <img src="images/cooking_class.png" alt="Cooking class information">
+      <div class="main-div" id="cooking">
+        <div class="main-img-box">
+        <img src="images/cooking_class.png" alt="Cooking class information" class="main-img"></div>
+        <div class="main-text">
         <h3>Torajan Cooking Class</h3>
         <p>Have you always wanted to take a look into an authentic Torajan kitchen? In our nature garden we grow a large variety of 
             the ingredients for typical Indonesian food. Learn how to harvest peanuts for the delicious Gado Gado or how to grow papayas
@@ -97,30 +118,37 @@
         <p>
             Arrive from Makale in the morning; we can help you organize transport if you don't have any. Roam the garden and discover the
             beauty of the Torajan Highlands. After lunch, ask us for reccommendations abour the area and take off for a short hike
-            or a cultural attraction in the afternoon. Return to your homestay in the evening. You can also book a homestay with us
-            (insert link to homestay section).
+            or a cultural attraction in the afternoon. Return to your homestay in the evening. You can also book a 
+            <a href="homestay.html" class="in-text-link">homestay</a> with us.
         </p>
         <p>
             This workshop is suitable for children. 
         </p>
- 
+        </div>
       </div>
-    </div>
 
     <p>If you wish to participate in a workshop or have any questions, don't hesitate to call or to contact us on whatsapp. 
-          (insert whatsapp button here)
     </p>
+    <a href="https://wa.me/6285256070656"
+      class="whatsapp-button" 
+      target="_blank" 
+      aria-label="WhatsApp">
+      Chat on WhatsApp
+    </a>
     
   </main>
 
   <footer>
-    <p>&copy; 2026 franzisca.gorniaczyk@gmail.com</p>
+    <p>&copy; Website created by Franzisca Gorniaczyk, 2026</p>
   </footer>
 
    <!--floating whatsapp button-->
   <a href="https://wa.me/6285256070656" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+  <!-- load the script for the menu-->
+  <script src="script.js"></script>
 
 </body>
 </html>

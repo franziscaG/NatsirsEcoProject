@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>English School</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="navigation.css">
+
+  <!-- comic neue font for headlines-->
+  <link href="http://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
   <!-- font awesome for the whatsapp symbol-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,40 +27,91 @@
   
   <!--navigation-->
   <header>
-    <h2>English School</h2>
+    <a href="index.html" class="home-link">Natsir's Eco Project</a>
   </header>
 
-  <nav class="toc">
-    <h3 onclick="this.nextElementSibling.classList.toggle('hidden')">Contents</h3>
-    <ul class="hidden">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nature-school.html">Organic Garden</a></li>
-      <li><a href="english-school.html">English School</a></li>
-      <li><a href="eco-tourism.html">Workshops</a></li>
-      <li><a href="homestay.html">Homestay and Retreats</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="projects.html">Current and Future Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!--this is where the menu should appear-->
+  <div id="menu-placeholder"></div>
   
   <main>
 
-    <h2>English School</h2>
-    <p>Children: Several days a week, afternoon, English classes in the garden. Learn how to talk, present yourself and 
-      interact with foreigners. Adults: English classes to teach highschool graduates to 
-      become future tourist guides. English classes for English school teachers.</p>
+    <div class="headline">
+      <h1>English School</h1>
+    </div>
+
+    <div class="page-intro">
+      <nav class="page-toc">
+        <ul>
+          <li><a href="#primary">Primary School Kids</a></li>
+          <li><a href="#highschool">Highschool Kids</a></li>
+          <li><a href="#adult">Adult training</a></li>
+        </ul>
+      </nav>
+
+      <div class="page-txt">
+        <p> We want to give the local children those opportunities that we struggled so hard to achieve when we were young. Giving free English classes was a straightforward decision that 
+          we haven't regretted for a single second. We enjoy seeing our youth interacting confidently with foreigners, become part of this international world. 
+        </p>
+      </div>
+
+    </div>
+    
+    <div class="main-div" id="primary">
+      <div class="main-img-box">
+        <img src="images/img.jpg" alt="Picture of English class?" class="main-img">
+      </div>
+      <div class="main-text">
+        <h3>Primary School Kids</h3>
+        <p>Teaching the young children English is one of our main objectives. We believe that a knowledge of this global language will serve them significantly in their future lives. Already
+        now, a large percentage of Toraja's economy is based on international tourism and the job market in the branch is growing rapidly. However, here, in the remote jungle of central 
+        Sulawesi, the rest of the world is incredibly far away and awareness for the significance of globalization staggerinly low. To bring the reality of a world-outside into the 
+        children's minds we are thrilled to have a constant flow of international <a href="volunteering.html#volunteers" class="in-text-link">volunteers</a>, who are willing to offer their time and 
+        knowledge to their pupils. Being confronted with different cultures, learning new ways of communicating and playing games, the children are visibly enjoying the classes, which are 
+        entirely voluntary for them. </p>
+        <p>Even with the help of the volunteers, <a href="garden.html#funding" class="in-text-link">funding</a> is, unfortunately, still essential to supply learning spaces and material.</p>
+      </div>
+    </div>
+
+    <div class="main-div reverse" id="highschool">
+      <div class="main-img-box">
+        <img src="images/img.jpg" alt="picture of older class?" class="main-img">
+      </div>
+      <div class="main-text">
+        <h3>Highschool Kids</h3>
+        <p>Many teenagers here in Toraja, at the end of highschool, are unsure at what to do with their lives. We want to give them opportunities outside of the traditional job market. In an 
+        effort to create awareness both for the environment and the tourism industry we offer different classes that cover organic farming and English for working in tourism. The topics in our
+        <a href="garden.html#farming" class="in-text-link">Nature School</a> include growing, harvesting and processing of native crops. The topics in the English classes are focused on the 
+        interaction with tourists.
+        </p>
+      </div>
+    </div>
+
+    <div class="main-div" if="adult">
+      <div class="main-img-box">
+        <img src="images/img.jpg" alt="picture of?" class="main-img">
+      </div>
+      <div class="main-text">
+        <h3>Adult training</h3>
+        <p>Occasionally we give training to adults. This comprises a big range of students, like trainee tourist guides and young English teachers. The state of English teaching at
+        Indonesian schools is still lacking professinonality. Certified English teachers, after having studied for several years at university, are still mostly unable to communicate 
+        freely or fluently, in the foreign language. We try to support them in their efforts and give them incentive by meeting our foreign volunteers. 
+        </p>
+      </div>
+    </div>
     
   </main>
 
   <footer>
-    <p>&copy; 2026 franzisca.gorniaczyk@gmail.com</p>
+    <p>&copy; Website created by Franzisca Gorniaczyk, 2026</p>
   </footer>
 
    <!--floating whatsapp button-->
   <a href="https://wa.me/6285256070656" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+  <!-- load the script for the menu-->
+  <script src="script.js"></script>
 
 </body>
 </html>

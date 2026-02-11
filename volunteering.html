@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Volunteering</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="navigation.css">
+
+  <!-- comic neue font for headlines-->
+  <link href="http://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 
   <!-- font awesome for the whatsapp symbol-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,40 +27,97 @@
   
   <!--navigation-->
   <header>
-    <h2>Volunteering</h2>
+    <a href="index.html" class="home-link">Natsir's Eco Project</a>
   </header>
 
-  <nav class="toc">
-    <h3 onclick="this.nextElementSibling.classList.toggle('hidden')">Contents</h3>
-    <ul class="hidden">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="nature-school.html">Organic Garden</a></li>
-      <li><a href="english-school.html">English School</a></li>
-      <li><a href="eco-tourism.html">Workshops</a></li>
-      <li><a href="homestay.html">Homestay and Retreats</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="projects.html">Current and Future Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!--this is where the menu should appear-->
+  <div id="menu-placeholder"></div>
   
   <main>
 
-    <p>International volunteers (also via Workaway): Free accommodation in exchange for twenty hours work a week; working in 
-    the garden, teaching English, running social media, setting up crowd-funding, etc.
-    Three meals in exchange for small fee. Local volunteers: Farming and English teaching internships for university students 
-    and graduates. Processing workshops in exchange for help in the garden.</p>
+    <div class="headline">
+      <h1>Volunteering</h1>
+    </div>
+
+    <div class="page-intro">
+      <nav class="page-toc">
+        <ul>
+          <li><a href="#volunteers">Volunteers</a></li>
+          <li><a href="#projects">The help we need</a></li>
+        </ul>
+      </nav>
+
+      <div class="page-txt">
+        <p>Our garden is wild and needs a lot of work. Our children are even wilder, but love to learn. We invite everyone with time and willingness on their hands to share it with us in the 
+          form of a work-exchange.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="main-div" id="volunteers">
+      <div class="main-img-box">
+        <img src="images/img.jpg" alt="picture of volunteers doing stuff?" class="main-img">
+      </div>
+      <div class="main-text">
+        <h3>International Volunteers</h3>
+        <p>Our project is non-profit and is based on the principles of learning, sharing and empowering. We offer a caring and friendly environment and are open to you helping us in ways 
+        that interest you and that match your abilities. The help needed whilst you're here is a mixture of working in the <a href="garden.html#garden" class="in-text-link">garden</a> 
+        and teaching English in my <a href="english-school.html" class="in-text-link">Nature School</a>.
+        The garden work involves planting, digging ponds, building paths, harvesting turmeric, coffee and cocoa. Plus whatever is needed for the project at the time!</p>
+        <p>While staying with us, we will provide you with three delicious, healthy meals each day, prepared by my lovely wife Diana and daughter Irma (vegans and vegetarians are easily 
+        accommodated). You will have the choice of staying in one of the 4 bamboo bungalows overlooking the garden. We provide a mattress, a mosquito net, electricity and warm sheets 
+        and pillows. See also the information on our <a href="homestay.html" class="in-text-link">Homestay</a>page to get a picture of this place.</p>
+        <p>Find out details, feedback from previous volunteers and many more pictures on <a href="#work-exchange" class="in-text-link">Workaway and Worldpackers</a>.</p>
+      </div>
+    </div>
+
+    <div class="main-div" id="projects">
+      <div class="main-img-box">
+        <img src="images/img.jpg" alt="picture not sure what?" class="main-img">
+      </div>
+      <div class="main-text">
+        <h3>The help we need</h3>
+        <p>When teaching the local children, please free to incorporate your own ideas. Although we have a book here that collects the ideas of our past volunteers, teaching ideas 
+        seem to work best when the teacher has ownership of the creative input. Please remember that the children will often come to class straight from school so keeping the sessions 
+        fun and interactive is the way to go! The children love learning new skills, so if you have a particular artistic skill - a recent volunteer made her own jewellery and taught the 
+        children to make their own - you could base some of your sessions around this skill/hobby. </p>
+        
+        <p>Volunteers can get also involved in the process of making our raw chocolate, from harvesting the cacao to customising the chocolate with the flavours they prefer (ginger, peanut, chilli and coconut) and of course enjoy the results!
+        We also roast our own coffee, make "crazy tea" and grow traditional medicinal plants, turmeric, lemongrass, ginger and many other varieties.</p>
+      </div>
+    </div>
+
+    <div class="work-exchange" id="work-exchange">
+      <h3>Join us in a work exchange:</h3>  
+      <a href="https://www.workaway.info/en/host/172851463463"
+        class="vol-button" 
+        target="_blank" 
+        aria-label="Workaway">
+        <img src="images/WA_icon.jpg" alt="">
+      </a>
+
+      <a href="https://www.worldpackers.com/locations/natsir-eco-learning-farm"
+        class="vol-button" 
+        target="_blank" 
+        aria-label="Workaway">
+        <img src="images/WP_icon.png" alt="">
+      </a>
+    </div>
     
   </main>
 
   <footer>
-    <p>&copy; 2026 franzisca.gorniaczyk@gmail.com</p>
+    <p>&copy; Website created by Franzisca Gorniaczyk, 2026</p>
   </footer>
 
    <!--floating whatsapp button-->
   <a href="https://wa.me/6285256070656" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+  <!-- load the script for the menu-->
+  <script src="script.js"></script>
 
 </body>
 </html>

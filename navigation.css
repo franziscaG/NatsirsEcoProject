@@ -1,0 +1,135 @@
+/* in text link styling*/
+.in-text-link {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.in-text-link:hover {
+  color: gray;
+}
+
+/* menu styling floating, collapsible*/
+nav.toc {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  font-size: 0.85rem;
+  background: transparent;
+  padding: 0;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  z-index: 1000;
+  font-family: inherit
+}
+
+nav.toc ul {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: #6db989;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+nav.toc li {
+  list-style: none;
+  margin: 0.4rem 0;
+}
+
+nav.toc li a {
+  display: block;
+  color: #555;
+  text-decoration: none;
+  margin: 0.25rem 0;
+  transition: color 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* change colour of menu item when hovering over*/
+nav.toc li a:hover {
+  color: #25D366;
+}
+
+/*open menu when clicking*/
+nav.toc ul:not(.hidden) {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* open menu when hovering on desktop*/
+@media (hover: hover) and (pointer: fine) {
+ nav.toc:hover ul {
+  opacity:1;
+  pointer-events: auto;
+  transform: translateY(0);
+ }
+}
+
+/* home link in header*/
+.home-link {
+  display: inline-block;
+  padding: 0 0.5rem 0 0.5rem;
+  border: 2.5px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-family: "Comic Neue", "Comic Sans", cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  backdrop-filter: blur(5px);
+}
+
+.home-link:hover {
+  color: rgb(71, 70, 70);
+  border: 2.5px solid rgb(71, 70, 70);
+}
+
+/* in page toc style*/
+.page-intro {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(203, 219, 203);
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  gap: 5vw;
+  padding: 0 5vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.page-toc {
+  text-align: right;
+  width: 20vw;
+}
+
+.page-toc ul {
+  list-style: none;
+}
+
+.page-toc li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-toc li a:hover {
+  color: #25D366;
+}
+
+.page-txt {
+  width: 40vw;
+  text-align: left;
+}

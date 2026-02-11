@@ -1,0 +1,125 @@
+/* menu button*/
+.menu-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  color: #555;
+}
+
+/*whatsapp floating button*/
+.whatsapp-float {
+  position:fixed;
+  bottom: 20px;
+  right:20px;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp-float.hover {
+  background-color:#1ebe5d;
+}
+
+/*whatsapp fixed button*/
+.whatsapp-button {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 400;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*volunteering buttons*/
+.vol-button img {
+  height: 5rem;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.work-exchange {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.work-exchange h3 {
+  width: 10rem;
+}
+
+/*social buttons styling*/
+.social-buttons {
+  justify-content: center;
+  display: flex;
+  gap: 12px;
+}
+
+/* IG and FB button*/
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  text-decoration: none;
+  background: rgb(90, 89, 89);
+
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.social-button.IG svg {
+  width: 40px;
+  height: 40px;
+  stroke: #f4f7f2;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.social-button.FB svg {
+  width: 40px;
+  height: 40px;
+  stroke: none;
+  fill: #f4f7f2;
+}
+
+.social-button.YT {
+  background: transparent;
+  box-shadow: none;
+}
+
+.social-button.YT svg {
+  fill: rgb(90, 89, 89);
+}
+
+/*location marker*/
+.location-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="red" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>') no-repeat center/contain;
+}
