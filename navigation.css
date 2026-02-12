@@ -83,7 +83,7 @@ nav.toc ul:not(.hidden) {
   text-decoration: none;
   color: black;
   font-family: 'Patrick Hand', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1rem;
   margin-right: 1rem;
@@ -132,6 +132,7 @@ nav.toc ul:not(.hidden) {
 .page-txt {
   width: 40vw;
   text-align: left;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {

@@ -15,6 +15,13 @@ body h1 {
   font-size: 7rem;
 }
 
+/* adjust for mobile devices*/
+@media (max-width: 768px) {
+  body h1 {
+    font-weight: 400;
+  }
+}
+
 body h2 {
   color: #3a5a40;
   margin: 0;
@@ -65,8 +72,8 @@ html {
 /* main page styling */
 .main-div {
   display: flex;
-  padding: 0 15vw;
-  gap: 10vw;
+  padding: 2rem 18vw;
+  gap: 4vw;
   align-items: center
 }
 
