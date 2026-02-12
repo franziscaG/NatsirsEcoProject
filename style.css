@@ -63,8 +63,7 @@ html {
 
 /*headline styling*/
 .headline {
-  /*background: rgb(203, 219, 203);*/
-  background: #9ec992;
+  background: rgb(203, 219, 203);
   padding-top: 2rem;
   padding-bottom: 1rem;
   box-sizing: border-box;
