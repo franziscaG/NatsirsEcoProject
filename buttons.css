@@ -1,4 +1,5 @@
-/* menu button*/
+/* menu floating button
+on all pages*/
 .menu-toggle {
   width: 3rem;
   height: 3rem;
@@ -8,9 +9,11 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   font-weight: bold;
   color: #555;
+  display: block;
 }
 
-/*whatsapp floating button*/
+/*whatsapp floating button 
+on all pages*/
 .whatsapp-float {
   position:fixed;
   bottom: 20px;
@@ -33,11 +36,13 @@
   z-index: 1000;
 }
 
-.whatsapp-float.hover {
-  background-color:#1ebe5d;
-}
 
-/*whatsapp fixed button*/
+/*.whatsapp-float.hover {
+  background-color:#bac4be;
+}*/
+
+/*whatsapp fixed button on Workshop
+and contact page*/
 .whatsapp-button {
   display: inline-block;
   padding: 12px 18px;
@@ -49,14 +54,8 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/*volunteering buttons*/
-.vol-button img {
-  height: 5rem;
-  width: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-}
-
+/*outer wrapping for volunteering buttons on 
+the Volunteering page*/
 .work-exchange {
   justify-content: center;
   display: flex;
@@ -68,14 +67,23 @@
   width: 10rem;
 }
 
-/*social buttons styling*/
+/*volunteering buttons Workaway and Worldpeckers*/
+.vol-button img {
+  height: 5rem;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*social buttons wrapper Instagram, Facebook and youtube
+on the contact page*/
 .social-buttons {
   justify-content: center;
   display: flex;
   gap: 12px;
 }
 
-/* IG and FB button*/
+/* social buttons general styling*/
 .social-button {
   display: inline-flex;
   align-items: center;
@@ -92,6 +100,7 @@
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
+/*Instagram button*/
 .social-button.IG svg {
   width: 40px;
   height: 40px;
@@ -100,6 +109,7 @@
   fill: none;
 }
 
+/*facebook button*/
 .social-button.FB svg {
   width: 40px;
   height: 40px;
@@ -107,16 +117,19 @@
   fill: #f4f7f2;
 }
 
+/*youtube button needs correction to wrapper due to different format*/
 .social-button.YT {
   background: transparent;
   box-shadow: none;
 }
 
+/*youtube button*/
 .social-button.YT svg {
   fill: rgb(90, 89, 89);
 }
 
-/*location marker*/
+/*location marker, technically not a button,
+on contact page*/
 .location-icon {
   display: inline-block;
   width: 24px;

@@ -1,4 +1,5 @@
-/* in text link styling*/
+/* in text link styling general
+on all pages*/
 .in-text-link {
   font-weight: bold;
   text-decoration: none;
@@ -6,11 +7,13 @@
   color: black;
 }
 
+/*color change when hovering over links*/
 .in-text-link:hover {
   color: gray;
 }
 
-/* menu styling floating, collapsible*/
+/* style of floating menu wrapper, includes button (on buttons stylesheet) and menu (below)
+on all pages*/
 nav.toc {
   position: fixed;
   top: 1rem;
@@ -22,9 +25,11 @@ nav.toc {
   border-radius: 0.5rem;
   box-shadow: none;
   z-index: 1000;
-  font-family: inherit
+  font-family: inherit;
+  display: inline-block;
 }
 
+/*style of the menu that opens up from the button*/
 nav.toc ul {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
@@ -35,13 +40,16 @@ nav.toc ul {
   pointer-events: none;
   transform: translateY(-5px);
   transition: opacity 0.2s ease, transform 0.2s ease;
+  position: absolute;
 }
 
+/*styling of the menu list*/
 nav.toc li {
   list-style: none;
   margin: 0.4rem 0;
 }
 
+/*individual menu items*/
 nav.toc li a {
   display: block;
   color: #555;
@@ -66,15 +74,14 @@ nav.toc ul:not(.hidden) {
 }
 
 /* open menu when hovering on desktop*/
-@media (hover: hover) and (pointer: fine) {
  nav.toc:hover ul {
   opacity:1;
   pointer-events: auto;
   transform: translateY(0);
  }
-}
 
-/* home link in header*/
+/* home link in header, when clicking brings you back to homepage
+on all pages*/
 .home-link {
   display: inline-block;
   padding: 0 0.5rem 0 0.5rem;
@@ -90,12 +97,14 @@ nav.toc ul:not(.hidden) {
   backdrop-filter: blur(5px);
 }
 
+/*change color when hovering over home link*/
 .home-link:hover {
   color: rgb(71, 70, 70);
   border: 2.5px solid rgb(71, 70, 70);
 }
 
-/* in page toc style*/
+/* short intro at the top ove page, just below title, wrapper for text and TOC
+same style for all pages*/
 .page-intro {
   width: 100%;
   box-sizing: border-box;
@@ -109,15 +118,19 @@ nav.toc ul:not(.hidden) {
   padding-bottom: 2rem;
 }
 
+/*intro TOC wrapper style*/
 .page-toc {
   text-align: right;
   width: 20vw;
 }
 
+
+/*intro TOC style*/
 .page-toc ul {
   list-style: none;
 }
 
+/*intro TOC list items*/
 .page-toc li a {
   text-decoration: none;
   color: #555;
@@ -125,16 +138,19 @@ nav.toc ul:not(.hidden) {
   text-transform: uppercase;
 }
 
+/*intro TOC change color when hover*/
 .page-toc li a:hover {
   color: #25D366;
 }
 
+/*intro text*/
 .page-txt {
   width: 40vw;
   text-align: left;
   font-style: italic;
 }
 
+/*intro adjsut to mobile, text below TOC*/
 @media (max-width: 768px) {
   .page-intro {
     flex-direction: column;

@@ -5,10 +5,14 @@
 <!-- define characters to use, set the dimension of the website layout, add the name, reference to the style file-->
 <head> 
   <meta charset="UTF-8">
-  <meta name="description" content="Natsir's Eco Project - authentic Indonesian lifestyle in culturally unique Tana Toraja">
+
+  <!--make visible to search engines-->
+  <meta name="description" content="Natsir Eco School - authentic Indonesian lifestyle in culturally unique Tana Toraja">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Natsirs Eco Project | Homestay</title>
+
+  <!--title of page, visible in tab-->
+  <title>Natsir Eco School | Homestay</title>
   
   <!-- font for headlines-->
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand:wght@400;700&display=swap" rel="stylesheet">
@@ -19,6 +23,7 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer">
 
+  <!--load stylesheets-->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="buttons.css">
   <link rel="stylesheet" href="navigation.css">
@@ -28,9 +33,9 @@
   
 <body>
   
-  <!--navigation-->
   <header>
-    <a href="home.html" class="home-link">Natsir's Eco Project</a>
+    <!--home link in header to link back to homepage-->
+    <a href="home.html" class="home-link">Natsir Eco School</a>
   </header>
 
   <!--this is where the menu should appear-->
@@ -38,10 +43,12 @@
   
   <main>
 
+    <!--headline of page moved down from header-->
     <div class="headline">
-      <h1>Homestay</h1>
+      <h1>Authentic Homestay</h1>
     </div>
 
+    <!--page intro contains toc and short summary-->
     <div class="page-intro">
       <nav class="page-toc">
         <ul>
@@ -57,43 +64,46 @@
           everyone to truly experience authentic Torajan lifestyle. 
         </p>
       </div>
-
     </div>
     
+    <!--main section homestay bungalows contains image and text-->
     <div class="main-div" id="rooms">
       <div class="main-img-box">
-        <img src="images/img.jpg" alt="picture of bamboo cabins?" class="main-img">
+        <img src="images/cabins.jpg" alt="Bamboo cabins for guests" class="main-img">
       </div>
       <div class="main-text">
         <h3>Where our guests stay</h3>
-        <p>We have several bamboo houses at the end of our property surrounded by native forest and our <a href="garden.html#garden" class="in-text-link">organic garden</a>. Each cabin is equipped with 
+        <p>We built several bamboo bungalows surrounded by native forest and our organic <a href="garden.html#garden" class="in-text-link">garden</a>. Each cabin is equipped with 
         either a double or single bed, mosquito netting and a spacious front porch. We live a very authentic, hence very simple, lifestyle and invite our guests to share it with us. 
         Washing and bathroom facilities are traditional Indonesian with squat-down toilets and cold showers. Coming directly from different hygienic standards might need some getting used
         to but we are confident you will manage.</p>
-        <p>We particularly invite families with children to stay with us as guests. Our youngest family member, the six-year old Adiba, would love some companions while strolling 
+        <p>We particularly invite families with children to stay with us as guests. Our granddaugher, the six-year old Adiba, would love some companions while strolling 
         through the garden, playing games or attending English class. </p>
         <p>We are currently still in the process of figuring out all the details for hosting guests, but please feel free to <a href="contact.html" class="in-text-link">contact</a> 
         us with any questions and inquiries. As soon as we set up our profile on a booking website, we will add a link in here.</p>
       </div>
     </div>
 
+    <!--main sections other services contains image and text-->
     <div class="main-div reverse" id="services">
       <div class="main-img-box">
-        <img src="images/food.jpg" alt="Picture of Dinner" class="main-img">
+        <img src="images/room.jpg" alt="Picture of Dinner" class="main-img">
       </div>
       <div class="main-text">
         <h3>What we offer</h3>
-        <p>You are invited to roam the garden as much as you want, listen in to English classes and ask us as many questions as you want. We provide you with drinking water, mechanically
-        filtered and boiled to make sterile, and if you wish we will provide you with up to three authentic meals a day. If you wish to learn how to cook Torajan dishes you are most welcome to 
-        sign up for a <a href="workshops.html#cooking" class="in-text-link">cooking class</a>. If you want to learn more about making chocolate from our cacao beans and roasting coffee, come and join our
-        <a href="workshops.html#chocolate" class="in-text-link">chocolate</a> and <a href="workshops.html#coffee" class="in-text-link">coffee</a> workshops.
+        <p>You are invited to roam the garden as much as you want, listen in to English classes and riddle us with questions about the Torajan culture. We provide you with drinking water, tea, coffee 
+          and three traditional Indonesian meals a day. Our cuisine is predominantly based on rice, supplied with tofu, tempeh, fish and vegetables. We easily 
+          cater to vegetarians and vegans. If you wish to learn how to cook Torajan dishes you are most welcome to 
+          sign up for a <a href="workshops.html#cooking" class="in-text-link">cooking class</a>. If you want to learn more about making chocolate from our cacao beans and roasting coffee, come and join 
+          our chocolate and coffee <a href="workshops.html" class="in-text-link">workshops</a>.
         </p>
       </div>
     </div>
 
+    <!--main seciton surroundings contains image and text-->
     <div class="main-div" id="surroundings">
       <div class="main-img-box">
-        <img src="images/ricefields.jpg" alt="Rice fields behind the property" class="main-img">
+        <img src="images/discover_garden.jpg" alt="Rice fields behind the property" class="main-img">
       </div>
       <div class="main-text">
         <h3>What you can do here</h3>
@@ -102,25 +112,22 @@
         the villages are exceptionally friendly and a 'hello' goes a long way. Oftentimes curiosity overturns language barriers and photo requests are frequent.</p>
         <p>More typical tourist attractions include visiting the gigantic Jesus statue on Burake Hill overlooking the city, hiking up to one of several other viewpoints along the main road
         between Makale and Rantepao to admire the vastness of the Torajan Highlands, or visiting tourist villages, burial sites and the traditional houses (Tongkonans) marked as "Wisata" on 
-        any map. There is an abundance of local guides, that are more than welcome to teach you about customs and traditions. Be aware that while the majority of Torajans are Christians,
-        there is also a significant number of Muslims here (including us).</p>
+        any map. There is an abundance of local guides, that are more than welcome to teach you about customs and traditions.</p>
         <p>For those preferring more physically challenging activities, there is a variety of hiking trails around, and renting
-        out camping equipment is very common. Long treks like Mount Sesean, Mount Karua and Mount Rantemaria (highest peak in Sulawesi) are best approached in the dry season, and, for those 
-        unexperienced, with a guide. While the dry season offers more time in the day for outdoor activities, the rain season turns this country into a green paradise. There
-        are still enough dry hours in the day to satisfy restless souls. </p>
+        out camping equipment is very common. While the dry season offers more time in the day for outdoor activities, the rain season turns this country into a green paradise.</p>
       </div>
     </div>
 
+    <!--main section transport contains imgae and text-->
     <div class="main-div reverse" id="transport">
       <div class="main-img-box">
-        <img src="images/img.jpg" alt="picture of?" class="main-img">
+        <img src="images/ricefields.jpg" alt="picture of?" class="main-img">
       </div>
       <div class="main-text">
         <h3>How to get around</h3>
-        <p>Our home is located in a village belonging to Rembon, about 8 kilometer west of Makale. Be aware, there is no public transport. You can reach us from Makassar either by long-distance 
-        bus to Makale terminal (examples of bus companies are Sina Mudar, ???). If you wish to drive around frequently it would be reccommended to rent motorbikes/scooters in Makale. There 
-        are also rental cars available but depending on the remoteness of the activities you would like to do, the roads to them might be not good enough for a car. In any case, we are happy to 
-        help you with organizing transport. 
+        <p>Our home is located in a village belonging to Rembon, about 8 kilometer west of Makale. Be aware, there is no public transport. You can reach us from Makassar by long-distance 
+        bus to Makale terminal. From there you will have to go by car or scooter. It is reccommended to rent your own transport in Makale, such that you are free to leave wherever you want without
+        relying on asking for a ride. Ask us for reccommendations for rental companies, details on bus services or anything else. 
         </p>
       </div>
     </div>
@@ -128,11 +135,12 @@
   </main>
 
   <footer>
+    <!--creator detals-->
     <p>&copy; Website created by Franzisca Gorniaczyk, 2026</p>
   </footer>
 
-   <!--floating whatsapp button-->
-  <a href="https://wa.me/6285256070656" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
+  <!--floating whatsapp button-->
+  <a href="https://wa.me/6285399602885" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
