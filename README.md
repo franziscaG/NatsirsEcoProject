@@ -2,7 +2,7 @@
 This is an attempt to built a (static) website for Natsir Eco School. Built step by step using GitHub Pages.
 
 Live site: 
-https://franziscag.github.io/NatsirsEcoProject/
+https://franziscag.github.io/NatsirsEcoProject/home
 
 If you want to work on the website, contact me on franzisca.gorniacyzk@gmail.com
 
