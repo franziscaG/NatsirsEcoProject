@@ -83,29 +83,6 @@ nav.toc ul:not(.hidden) {
   transform: translateY(0);
  }
 
-/* home link in header, when clicking brings you back to homepage
-on all pages*/
-.home-link {
-  display: inline-block;
-  padding: 0 0.5rem 0 0.5rem;
-  border: 2.5px solid black;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-family: 'Patrick Hand', sans-serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  backdrop-filter: blur(5px);
-}
-
-/*change color when hovering over home link*/
-.home-link:hover {
-  color: rgb(71, 70, 70);
-  border: 2.5px solid rgb(71, 70, 70);
-}
-
 /* short intro at the top ove page, just below title, wrapper for text and TOC
 same style for all pages*/
 .page-intro {
