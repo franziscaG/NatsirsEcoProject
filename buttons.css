@@ -37,9 +37,9 @@ on all pages*/
 }
 
 
-/*.whatsapp-float.hover {
-  background-color:#bac4be;
-}*/
+.whatsapp-float:hover {
+  background-color:#82eb87;
+}
 
 /*whatsapp fixed button on Workshop
 and contact page*/
@@ -52,6 +52,10 @@ and contact page*/
   border-radius: 8px;
   font-weight: 400;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-button:hover {
+  background-color:#82eb87;
 }
 
 /*outer wrapping for volunteering buttons on 
@@ -67,12 +71,32 @@ the Volunteering page*/
   width: 10rem;
 }
 
+/*on mobile have vol buttons below another*/
+@media (max-width: 768px) {
+  .work-exchange {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*adjust vol button image wrapper*/
+.vol-button {
+  border-radius: 8px;
+  padding: 0 1rem;
+  display: inline-block;
+}
+
 /*volunteering buttons Workaway and Worldpeckers*/
 .vol-button img {
+  display: block;
   height: 5rem;
   width: auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.vol-button:hover {
+  background:rgb(220, 229, 245);
 }
 
 /*social buttons wrapper Instagram, Facebook and youtube
@@ -98,6 +122,10 @@ on the contact page*/
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.social-button:hover {
+  background:rgb(151, 154, 211);
 }
 
 /*Instagram button*/
@@ -126,6 +154,10 @@ on the contact page*/
 /*youtube button*/
 .social-button.YT svg {
   fill: rgb(90, 89, 89);
+}
+
+.social-button.YT svg:hover {
+  fill:rgb(151, 154, 211);
 }
 
 /*location marker, technically not a button,

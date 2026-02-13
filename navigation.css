@@ -31,16 +31,19 @@ nav.toc {
 
 /*style of the menu that opens up from the button*/
 nav.toc ul {
-  margin-top: 0.5rem;
+  margin-top: 0;
   padding: 0.5rem 1rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  /*box-shadow: 0 4px 10px rgba(0,0,0,0.1);*/
   background: #6db989;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-5px);
   transition: opacity 0.2s ease, transform 0.2s ease;
   position: absolute;
+  width: 7rem;
+  border: 8px solid transparent;
+  background-clip: padding-box;
 }
 
 /*styling of the menu list*/
@@ -74,7 +77,7 @@ nav.toc ul:not(.hidden) {
 }
 
 /* open menu when hovering on desktop*/
- nav.toc:hover ul {
+ nav.toc:hover ul, nav.toc ul:hover {
   opacity:1;
   pointer-events: auto;
   transform: translateY(0);

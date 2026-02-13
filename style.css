@@ -22,7 +22,7 @@ body h1 {
 /* adjust h1 for mobile devices, makes smaller*/
 @media (max-width: 768px) {
   body h1 {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 4rem;
   }
 }
@@ -81,7 +81,7 @@ html {
 /*headline moved down from header to top of main
 on all pages*/
 .headline {
-  background: rgb(203, 219, 203);
+  background: #9ec992;
   padding-top: 2rem;
   padding-bottom: 1rem;
   box-sizing: border-box;
@@ -129,6 +129,16 @@ on all pages */
   text-align: justify;
 }
 
+/*text subsection titles*/
+.main-text h4 {
+  text-align: left;
+}
+
+/*lists of main div*/
+.main-text ul {
+  text-align: left;
+}
+
 /* adjust for mobile devices such that image above text, text not block and as wide as the phone screen*/
 @media (max-width: 768px) {
   .main-div, .main-div.reverse {
@@ -163,6 +173,8 @@ on contact page*/
 /*'text' for each contact item*/
 .Contact p {
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* adjust for mobile devices that items are in a column*/
@@ -180,6 +192,8 @@ on contact page*/
 on contact page*/
 @media (max-width: 768px) {
   iframe {
-    height: 200px;
+    width: max-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
