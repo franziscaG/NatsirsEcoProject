@@ -101,6 +101,20 @@ on all pages*/
   left: -5rem;
 }
 
+/*move logo around for mobile*/
+@media (max-width: 768px) {
+  .headline-top {
+    gap: 2rem;
+    position: relative;
+    left: -3rem;
+  }
+
+  .headline-top img {
+    width: 4rem;
+    height: auto;
+  }
+}
+
 /* main style, wrapper for image and text,
 on all pages */
 .main-div {
