@@ -107,8 +107,8 @@ on all pages*/
     display: none;
   }
 
-  .headline-top h1 {
-    text-align: center;
+  .headline-top {
+    left: 2rem;
   }
 }
 
