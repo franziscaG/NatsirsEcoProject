@@ -94,7 +94,7 @@ on all pages*/
 
 /*wrapper for logo and h1*/
 .headline-top {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 4rem;
   position: relative;
@@ -108,13 +108,9 @@ on all pages*/
   }
 
   .headline-top {
-    display: block;
+    justify-content: center;
     gap: 0;
     left: 0;
-    text-align: center;
-  }
-  .headline-top h1 {
-    margin:0 auto;
   }
 }
 
