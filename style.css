@@ -107,9 +107,9 @@ on all pages*/
     display: none;
   }
 
-  .headline-top img {
-    width: 4rem;
-    height: auto;
+  .headline-top {
+    gap: 0;
+    left: 0;
   }
 }
 
