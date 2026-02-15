@@ -109,6 +109,7 @@ on all pages*/
 
   .headline-top {
     gap: 0;
+    left: 0;
     justify-content: center;
   }
 }
