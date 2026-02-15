@@ -108,6 +108,7 @@ on all pages*/
   }
 
   .headline-top {
+    gap: 0;
     justify-content: center;
   }
 }
