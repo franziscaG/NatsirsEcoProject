@@ -108,10 +108,7 @@ on all pages*/
   }
 
   .headline-top {
-    width: 100%;
     justify-content: center;
-    gap: 0;
-    left: 0;
   }
 }
 
