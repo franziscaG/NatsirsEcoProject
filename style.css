@@ -108,9 +108,13 @@ on all pages*/
   }
 
   .headline-top {
+    display: block;
     gap: 0;
     left: 0;
-    justify-content: center;
+    text-align: center;
+  }
+  .headline-top h1 {
+    margin:0 auto;
   }
 }
 
