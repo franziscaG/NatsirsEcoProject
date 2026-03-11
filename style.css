@@ -96,6 +96,7 @@ on all pages*/
 .headline-top {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4rem;
   position: relative;
   left: -5rem;
